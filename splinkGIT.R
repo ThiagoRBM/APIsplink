@@ -39,8 +39,10 @@ siteSPLink= httr::POST(urlSPLink, inherits=FALSE) ## fazendo o pedido
 informacoesSPLink2 = httr::content(siteSPLink, encoding = "UTF-8",
                                    type = 'text/tab-separated-values') ## retornando os dados
 
+caminho= "C:/Users/HP/Desktop/" ## colocar o caminho do diretorio onde quer salvar a tabela do SPlink
+nomeTabela= "BuscaAPIsplink.txt" ## colocar o nome que a tabela tera
 
-write.table(informacoesSPLink2, "C:/Users/HP/Desktop/SPlinkTeste.txt", sep= "\t",
-            fileEncoding = "UTF-16LE", row.names = FALSE, col.names = TRUE)
-
+write.table(informacoesSPLink2, paste0(caminho, nomeTabela), sep= "\t",
+            fileEncoding = "UTF-16LE", row.names = FALSE, col.names = TRUE) ## rodar aqui para salvar
+## o que foi baixado em uma tabela
 
