@@ -20,13 +20,14 @@ csv= "/csv"
 Coordenadas= "/Coordinates/yes" ## pegando só o que tem coordenadas
 
 
-nomesCientificos= c('Dioclea violacea, Mabea fistulifera, Hancornia speciosa') ## exemplo: rode essa linha
+nomesCientificos= c("Dioclea violacea", "Mabea fistulifera", "Hancornia speciosa") ## exemplo: rode essa linha
 ## sem alterar
 
 
 Nomes= function (Nomes) {
   Nomes= gsub(",", "/", Nomes, perl = TRUE)
   Nomes= gsub(" ", "%20", Nomes, perl = TRUE)
+  Nomes= paste(Nomes, collapse= ",")
   
 } ## arrumando os nomes para montar a url
 
