@@ -11,8 +11,8 @@ library(readxl)
 ##### buscando dados de ocorrências das espécies no SPLink #######
 
 
-tabelaNomes= read_excel("NomesCientificos.xlsx") ## tabela do excel que tenha uma coluna com nomes cientificos
-## de interesse
+tabelaNomes= read_excel("C:/Users/HP/Google Drive/R/NomesCientificos.xlsx") 
+## tabela do excel que tenha uma coluna com nomes cientificos de interesse
 
 caminho= "C:/Users/HP/Desktop/" ## colocar o caminho do diretorio onde quer salvar a tabela do SPlink
 nomeTabela= "BuscaAPIsplink.txt" ## colocar o nome que a tabela tera
