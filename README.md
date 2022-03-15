@@ -1,5 +1,5 @@
 # APIsplink
-Buscar informações no site SPLink (teste)
+Buscar informações no site SPLink
 
 
 Script (ainda não transformado em bibliteca) para buscar informações de coleções biológicas (micoteca, herbário, coleção zoológia) que tenham sido 
