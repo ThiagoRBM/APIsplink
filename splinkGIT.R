@@ -54,4 +54,4 @@ buscaSpLink= function(vetorNomes, caminho= getwd()){
 
 
 
-tabela=buscaSpLink(testeSp$especie,caminho="/home/thiagorbm/Documents/testeMover")
+tabela=buscaSpLink(testeSp$especie,caminho=getwd())
