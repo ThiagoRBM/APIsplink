@@ -17,7 +17,7 @@ buscaSpLink= function(vetorNomes, caminho= getwd()){
     gsub(",", "/", ., perl = TRUE) %>% 
     gsub(" ", "%20", ., perl = TRUE)
   
-  urlSPLink= paste0(SPLink,Records,Species,vetorNomes,Coordenadas,csv) ## criando a URL
+  urlSPLink= paste0(SPLink,Records,Species,vetorNomes,Coordenadas) ## criando a URL
   
   listaBusca=vector("list", length=length(urlSPLink))
   for(i in 1:length(urlSPLink)){
@@ -54,4 +54,4 @@ buscaSpLink= function(vetorNomes, caminho= getwd()){
 
 
 
-tabela=buscaSpLink(testeSp$especie,caminho=getwd())
+teste1=buscaSpLink(sp)
