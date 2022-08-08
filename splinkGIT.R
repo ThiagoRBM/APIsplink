@@ -1,5 +1,3 @@
-
-
 library(httr)
 library(dplyr)
 library(readxl)
@@ -52,6 +50,7 @@ buscaSpLink= function(vetorNomes, caminho= getwd()){
   return(listaBusca2)
 }
 
+testeVetor=buscaSpLink(sp,caminho="/home/thiagorbm/Documents/testeMover")
 
-
-teste1=buscaSpLink(sp)
+NomesCientificos <- read_excel("NomesCientificos.xlsx")
+testeTabExcel= buscaSpLink(NomesCientificos$nomeCientifico)
